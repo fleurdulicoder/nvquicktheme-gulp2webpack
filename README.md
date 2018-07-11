@@ -16,10 +16,14 @@
   "gulp-zip": "^4.1.0",
   "jshint": "^2.9.5"
 
-2. Substitution for Webpack in package.json:
-
-... coming
-
+2. GULP Substitution >>
+  - images compression and moving from src/images to dist/images (X)
+  - creating a bundle from modules in src/js/ as index.js (modular design) (X)
+  - moving minified js bundle src/js/index.js into dist/js/main.min.js (X)
+  - combine sass files, minify and move into dist/css/main.min.css (in progress)
+  - .bscss files (look into this from webpack perspective)
+  - add webpack linting for es6 errors (jshint in gulp example)
+  - .... (in progress)
 
 ![](http://nvquicktheme.nvisionative.com/portals/0/nvQuickTheme_logo.png)](http://nvquicktheme.nvisionative.com)
 
