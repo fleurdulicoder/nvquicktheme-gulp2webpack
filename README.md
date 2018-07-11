@@ -1,4 +1,27 @@
-[![](http://nvquicktheme.nvisionative.com/portals/0/nvQuickTheme_logo.png)](http://nvquicktheme.nvisionative.com)
+## Package Upgrade from GULP to WEBPACK
+
+1. Removing Gulp packages from package.json:
+  "gulp": "^3.9.1",
+  "gulp-autoprefixer": "^4.0.0",
+  "gulp-clean": "^0.4.0",
+  "gulp-imagemin": "^4.0.0",
+  "gulp-jshint": "2.x",
+  "gulp-notify": "^3.0.0",
+  "gulp-rename": "^1.2.2",
+  "gulp-replace": "^0.6.1",
+  "gulp-sass": "^3.1.0",
+  "gulp-sequence": "^1.0.0",
+  "gulp-sourcemaps": "^2.6.4",
+  "gulp-uglify": "^3.0.0",
+  "gulp-zip": "^4.1.0",
+  "jshint": "^2.9.5"
+
+2. Substitution for Webpack in package.json:
+
+... coming
+
+
+![](http://nvquicktheme.nvisionative.com/portals/0/nvQuickTheme_logo.png)](http://nvquicktheme.nvisionative.com)
 
 **nvQuickTheme** is more than just a great minimalist DNN (DotNetNuke) theme.  It is a powerful theme building framework and developer workflow.  This "starter solution" was made with developer efficiency and the ultimate DNN theme performance in mind.  Most DNN themes in the marketplace today are loaded with bloat, which can make theming a pain, and for someone new to DNN, almost impossible.  Our [documentation](https://github.com/nvisionative/nvQuickTheme/wiki) will outline basic usage, modification, and advanced usage of this framework and developer workflow.
 
@@ -36,6 +59,6 @@ The [nvisionative](http://www.nvisionative.com) team has been working in the DNN
 * Change Responsive Breakpoints (coming soon)
 * Optimize Images (coming soon)
 * Troubleshoot node/npm/yarn/gulp issues on Mac (coming soon)
- 
+
 ---
 [![Brought to the DNN community by nvisionative](http://www.nvquicksite.com/Portals/0/broughtBy-nvisionative.png)](http://www.nvisionative.com)
