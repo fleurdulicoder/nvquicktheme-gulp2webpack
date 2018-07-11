@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { ImageminWebpackPlugin } = require('imagemin-webpack');
 const ImageMinGifsicle = require('imagemin-gifsicle');
@@ -7,7 +8,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    filename: 'js/main.js',
+    filename: 'js/index.js',
   },
   module: {
     rules: [
@@ -29,9 +30,13 @@ module.exports = {
           },
         ],
       },
-    ]
+    ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
     new ImageminWebpackPlugin({
       imageminOptions: {
         bail: false,
@@ -44,5 +49,5 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './img/**/*.{jpg,jpeg,png,gif}', to: '' },
     ]),
-  ]
+  ],
 };

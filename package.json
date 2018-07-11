@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap": "4.0.0",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
@@ -17,10 +18,23 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "copy-webpack-plugin": "^4.5.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "imagemin-gifsicle": "^5.2.0",
     "imagemin-webpack": "^3.0.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack -d --watch",
+    "build": "webpack --mode development",
+    "lint": "eslint **/*.js",
+    "lint-fix": "eslint --fix **/*.js"
   }
 }
