@@ -28,7 +28,7 @@ The [nvisionative](http://www.nvisionative.com) team has been working in the DNN
 * [SCSS](https://github.com/nvisionative/nvQuickTheme/wiki/SCSS)
 
 ### How To...
-* [Working With the Out-Of-Box Theme](https://github.com/nvisionative/nvQuickTheme/wiki/Working-With-the-Out-Of-Box-Theme)
+* [Download and Install the Out-Of-Box Theme](https://github.com/nvisionative/nvQuickTheme/wiki/Download-and-Install-the-Out-Of-Box-Theme)
 * Show/Hide LOGIN, USER, SEARCH, LANGUAGE (coming soon)
 * Add/Change/Remove Content Panes (coming soon)
 * Change Theme Colors (coming soon)
@@ -36,6 +36,3 @@ The [nvisionative](http://www.nvisionative.com) team has been working in the DNN
 * Change Responsive Breakpoints (coming soon)
 * Optimize Images (coming soon)
 * Troubleshoot node/npm/yarn/gulp issues on Mac (coming soon)
- 
----
-[![Brought to the DNN community by nvisionative](http://www.nvquicksite.com/Portals/0/broughtBy-nvisionative.png)](http://www.nvisionative.com)
