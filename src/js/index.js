@@ -1,4 +1,3 @@
-
 import $ from 'jquery';
 import getElement from './utils';
 

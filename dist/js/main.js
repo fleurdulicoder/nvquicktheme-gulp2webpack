@@ -104,7 +104,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"img/iStock-91133060.jpg\";\n\n//# sourceURL=webpack:///./src/images/iStock-91133060.jpg?");
+eval("module.exports = \"images/iStock-91133060.jpg\";\n\n//# sourceURL=webpack:///./src/images/iStock-91133060.jpg?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("module.exports = \"img/iStock-91133060.jpg\";\n\n//# sourceURL=webpack:///
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _utils = __webpack_require__(/*! ./utils */ \"./src/js/utils.js\");\n\nvar _utils2 = _interopRequireDefault(_utils);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar banner = __webpack_require__(/*! ../images/iStock-91133060.jpg */ \"./src/images/iStock-91133060.jpg\");\n\nvar app = (0, _utils2.default)('app');\napp.style.backgroundColor = '#f1f1f1';\napp.style.backgroundImage = banner;\napp.style.width = '100vw';\napp.style.height = '100vh';\n\n// custom.js code moved here\n(0, _jquery2.default)(document).ready(function () {\n  (0, _jquery2.default)('#navigation').slimmenu({\n    resizeWidth: '800',\n    collapserTitle: '',\n    animSpeed: 0,\n    easingEffect: null,\n    indentChildren: false,\n    childrenIndenter: '&nbsp;',\n    expandIcon: '',\n    collapseIcon: ''\n  });\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("var _jquery=__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\"),_jquery2=_interopRequireDefault(_jquery),_utils=__webpack_require__(/*! ./utils */ \"./src/js/utils.js\"),_utils2=_interopRequireDefault(_utils);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var banner=__webpack_require__(/*! ../images/iStock-91133060.jpg */ \"./src/images/iStock-91133060.jpg\"),app=(0,_utils2.default)('app');app.style.backgroundColor='#f1f1f1',app.style.backgroundImage=banner,app.style.width='100vw',app.style.height='100vh',(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('#navigation').slimmenu({resizeWidth:'800',collapserTitle:'',animSpeed:0,easingEffect:null,indentChildren:!1,childrenIndenter:'&nbsp;',expandIcon:'',collapseIcon:''})});\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -128,7 +128,7 @@ eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquer
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getElement = function getElement(id) {\n  return document.getElementById(id);\n};\nexports.default = { getElement: getElement };\n\n//# sourceURL=webpack:///./src/js/utils.js?");
+eval("Object.defineProperty(exports,\"__esModule\",{value:!0});var getElement=function(a){return document.getElementById(a)};exports.default={getElement:getElement};\n\n//# sourceURL=webpack:///./src/js/utils.js?");
 
 /***/ })
 
