@@ -1,8 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { ImageminWebpackPlugin } = require('imagemin-webpack');
 const ImageMinGifsicle = require('imagemin-gifsicle');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -30,6 +31,26 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true },
+          },
+          {
+            loader: 'postcss-loader',
+            options: { config: { path: 'postcss.config.js' }, sourceMap: true },
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: true },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -49,5 +70,9 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './img/**/*.{jpg,jpeg,png,gif}', to: '' },
     ]),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css',
+    }),
   ],
 };
