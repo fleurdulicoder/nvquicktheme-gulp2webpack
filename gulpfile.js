@@ -27,13 +27,13 @@ var gulp          = require('gulp'),
     dist          = ( config.dist.length )? config.dist+'/' : '',
     temp          = ( config.temp.length )? config.temp+'/' : '',
     build         = ( config.build.length )? config.build+'/' : '';
-    
+
 
 
 /*
 *	IMAGE/SVG TASKS
 ------------------------------------------------------*/
-    
+
 // Compresses images for production.
 gulp.task('images', function() {
 	return gulp.src( './images/**/*.{jpg,jpeg,png,gif}' )
@@ -77,7 +77,7 @@ gulp.task('bscss', function() {
     .pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest( './'+dist+'css/'))
 		.pipe(notify({message: 'Styles compiled successfully!', title : 'bootstrap', sound: false}));
-})
+});
 
 
 
@@ -141,20 +141,20 @@ gulp.task('init', function() {
 	gulp.src( './'+node+'/normalize.css/normalize.css' )
 		.pipe(rename("_normalize.scss"))
 		.pipe(gulp.dest( './'+src+"scss/components/"));
-  
+
   // Copies over bootstrap scss and js to dist.
   // This will overwrite any changes you've made to bootstrap's scss
 	gulp.src( './'+node+'/bootstrap/scss/**/*', {base: './'+node})
 		.pipe(gulp.dest( './'+src+assets));
   gulp.src( './'+node+'/bootstrap/dist/js/bootstrap.bundle.min.js')
 		.pipe(gulp.dest( './'+dist+"/js/"));
-  
+
   // Copies over font-awesome assets to dist.
   gulp.src( './'+node+'/font-awesome/fonts/*')
 		.pipe(gulp.dest( './'+dist+"/fonts/"));
   gulp.src( './'+node+'/font-awesome/css/font-awesome.min.css')
 		.pipe(gulp.dest( './'+dist+"/css/"));
-    
+
 });
 
 // Takes the information provided at the top of this file and populates it into the manifest.dnn file.
@@ -211,7 +211,7 @@ gulp.task('buildzips', function (cb) {
 
 // Zips the .zip files and single files into a package zip file.
 // Will need to change if adding specific files.
-gulp.task('zipfiles', function() { 
+gulp.task('zipfiles', function() {
   return gulp.src(['./'+temp+'*.zip','*.{dnn,png,jpg}', 'LICENSE'])
     .pipe(zip(project+'\_'+version+'\_install.zip'))
     .pipe(gulp.dest('./'+build))

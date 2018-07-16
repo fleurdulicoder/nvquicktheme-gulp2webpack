@@ -32,7 +32,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -50,6 +50,19 @@ module.exports = {
             options: { sourceMap: true },
           },
         ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+          },
+        }],
+      },
+      {
+
       },
     ],
   },
@@ -71,8 +84,9 @@ module.exports = {
       { from: './img/**/*.{jpg,jpeg,png,gif}', to: '' },
     ]),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-      chunkFilename: 'css/[id].css',
+      // filename: 'css/[name].min.css',
+      // chunkFilename: 'css/[id].min.css',
+      filename: 'main.min.css',
     }),
   ],
 };

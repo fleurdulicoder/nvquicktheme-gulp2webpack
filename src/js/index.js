@@ -1,3 +1,4 @@
+import '../scss/style.scss';
 import $ from 'jquery';
 import getElement from './utils';
 
